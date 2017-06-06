@@ -63,29 +63,35 @@ import re
 
 #获取链接地址中的所有链接
 def DFS(url):
-    
     website = urllib.request.urlopen(url)
     #read html code
     html = website.read().decode("UTF-8")
     #use re.findall to get all the links
     links =re.findall('"((http|ftp)s?://.*?)"', html)
+    print(url,"网址下所有链接",links)
     while len(links):
         link=list.pop(links)
-        print(link)
-        if "jpg" not in link[0] and "gif" not in link[0]:
+        try:
             DFS(link[0])
+        except:
+            continue;
     return;
 
 #connect to a URL
-url="http://www.caixin.com/"
-website = urllib.request.urlopen(url=url,timeout=10)
-#read html code
-html = website.read().decode("UTF-8")
-#use re.findall to get all the links
-links =re.findall('"((http|ftp)s?://.*?)"', html)
-print(links)
-while len(links):
-    link=list.pop(links)
-    print(link)
-    if "jpg" not in link[0] and "gif" not in link[0]:
-        DFS(link[0])
+try:
+    i=0;
+    url="http://www.caixin.com/"
+    website = urllib.request.urlopen(url=url,timeout=10)
+    #read html code
+    html = website.read().decode("UTF-8")
+    #use re.findall to get all the links
+    links =re.findall('"((http|ftp)s?://.*?)"', html)
+    print(links)
+    while len(links):
+        link=list.pop(links)
+        i+=1
+        print(link,"第",i,"个链接")
+        if "jpg" not in link[0] and "gif" not in link[0]:
+            DFS(link[0])
+except:
+    print("异常退出")
