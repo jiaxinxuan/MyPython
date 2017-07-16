@@ -20,19 +20,20 @@ from lib2to3.fixer_util import String
 import os
 import sys
 import time
+
 from turtledemo.clock import tick
 
 
 os.environ
 print(os.environ)
 print(os.abc)
-#打印当前时间�?
+#打印当前时间�?
 ticks=time.time();
 print("当前时间戳：",ticks)
 #获取当前时间
 localtime=time.localtime(time.time())
 print("当前时间是：",localtime)
-#格式化当前时�?
+#格式化当前时�?
 print(time.asctime(time.localtime(ticks)))
 print(time.asctime())
 # 格式化成2016-03-20 11:45:39形式
@@ -48,5 +49,5 @@ print(time.strftime("%Y/%m/%d %H:%M %S",time.localtime()))
 
 #python 的日历类
 cal = calendar.month(2017, 8)
-print("以下输出2017�?8月份的日�?:")
+print("以下输出2017�?8月份的日�?:")
 print(cal)

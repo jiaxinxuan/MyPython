@@ -1,7 +1,10 @@
-import urllib.request
 import datetime  
 import threading  
-from time import ctime,sleep  
+from time import ctime, sleep  
+
+import urllib.request
+
+
 def t1(func):  
   for i in range(50):  
     starttime = datetime.datetime.now()  

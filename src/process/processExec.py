@@ -3,9 +3,9 @@ Created on 2017年6月20日
 
 @author: Administrator
 '''
+from multiprocessing import Pool
 import os
 import time
-from multiprocessing import Pool
 
 
 def getFile(path) :

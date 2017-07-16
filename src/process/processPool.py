@@ -3,8 +3,10 @@ Created on 2017年6月20日
 
 @author: Administrator
 '''
-from multiprocessing import Pool,cpu_count
+from multiprocessing import Pool, cpu_count
 import time
+
+
 #计算平方和
 def fn(n):
     time.sleep(1)#必须设置休眠时间，模拟运算操作，否则看不出来效果

@@ -3,10 +3,13 @@ Created on 2017年6月20日
 
 @author: Administrator
 '''
-import jieba
 '''
 练习使用结巴分词，顺便练习下文件的读写
 '''
+
+import jieba
+
+
 def sliptsentence(inputFile,outPutFile):
     try:
         inFile=open(file=inputFile, mode="r",encoding="UTF-8")#以读的方式打开该文件

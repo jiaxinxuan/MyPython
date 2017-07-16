@@ -15,6 +15,7 @@ kwargs：表示调用对象的字典。
 '''
 import multiprocessing
 
+
 def do(m):
     name=multiprocessing.current_process().name#获取当前执行的进程的名称
     print(name,"Staring")

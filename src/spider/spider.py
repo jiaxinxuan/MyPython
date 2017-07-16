@@ -58,8 +58,10 @@ Python3中urllib和urllib2都集成在同一个包urllib中了，同时urllib也
 等磨矿
 
 '''
-import urllib.request
 import re
+
+import urllib.request
+
 
 #获取链接地址中的所有链接
 def DFS(url):
