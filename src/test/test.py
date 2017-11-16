@@ -242,3 +242,4 @@ for fruit in fruits:        # 第二个实�?
    print ('当前水果 :', fruit)
  
 print ("Good bye!")
+print(values="ewew",sep="fefe",end="\n",flush=False)
