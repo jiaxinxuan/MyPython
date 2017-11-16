@@ -56,3 +56,14 @@ print(1,2,3,4,sep="|",end="=?",file=a)
 '''
 总结：print的输出和c语言的挺像，不过它是函数式编程语言，相较于Java还是比较难理解些。
 '''
+
+
+class jiaxinuan:
+
+    #定义简单输出函数
+    def wangbadang(self):
+        str = ' 1223333';
+        print(str);
+
+jia=jiaxinuan();
+jia.wangbadang();
