@@ -67,3 +67,9 @@ class jiaxinuan:
 
 jia=jiaxinuan();
 jia.wangbadang();
+
+
+str = input("请输入内容：\n");
+print("你输入的内容是：",str);
+num=1;
+print("和num相加得到的结果是:",num+int(str));
