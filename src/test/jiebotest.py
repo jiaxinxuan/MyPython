@@ -1,11 +1,9 @@
-'''
+"""
 Created on 2017年6月20日
 
 @author: Administrator
-'''
-'''
 练习使用结巴分词，顺便练习下文件的读写
-'''
+"""
 
 import jieba
 
